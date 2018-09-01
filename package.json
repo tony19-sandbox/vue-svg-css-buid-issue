@@ -15,6 +15,7 @@
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
     "node-sass": "^4.9.3",
+    "postcss-import": "^11.1.0",
     "sass-loader": "^7.1.0",
     "svg-sprite-loader": "^3.9.2",
     "vue-template-compiler": "^2.5.17"
@@ -35,7 +36,8 @@
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {},
+      "postcss-import": {}
     }
   },
   "browserslist": [

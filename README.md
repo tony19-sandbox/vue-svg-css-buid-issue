@@ -1,21 +1,32 @@
-# vue-svg-css-build-issue
+> Demo for https://stackoverflow.com/questions/51996170/could-not-build-project-with-vue-cli-3-template-due-to-svg-in-css
 
-## Project setup
-```
-yarn install
-```
+This project demonstrates a build error and its workaround in a Vue project that:
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+  * contains a CSS file that imports an SVG file
+  * uses [`postcss-import`](https://github.com/postcss/postcss-import)
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+#### Steps to reproduce
 
-### Lints and fixes files
-```
-yarn run lint
-```
+ 1. Install Node modules:
+
+      npm install
+
+ 2. Patch `svg-sprite-loader` to workaround [`svg-sprite-loader` Issue 271](https://github.com/kisenka/svg-sprite-loader/issues/271):
+
+      ./patch-svg-sprite-loader.sh
+
+ 3. Checkout commit c552fc6 to demo the broken build:
+
+      git checkout c552fc6
+
+ 3. Start a build (and observe a build error: `ReferenceError: navigator is not defined`):
+
+      npm run build
+
+ 4. Checkout the tip of `master` to demo the workaround:
+
+      git checkout master
+
+ 5. Start a build (and observe no build errors):
+
+      npm run build

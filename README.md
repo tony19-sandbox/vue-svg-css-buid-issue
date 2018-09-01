@@ -15,7 +15,7 @@ This project demonstrates a build error and its workaround in a Vue project that
 
         ./patch-svg-sprite-loader.sh
 
- 3. Checkout commit c552fc6 to demo the broken build:
+ 3. Checkout commit [`c552fc6`](https://github.com/tony19-sandbox/vue-svg-css-buid-issue/commit/c552fc668066f94da3cef9b5d858f0fc8baea52e) to demo the broken build:
 
         git checkout c552fc6
 
@@ -23,7 +23,7 @@ This project demonstrates a build error and its workaround in a Vue project that
 
         npm run build
 
- 4. Checkout the tip of `master` to demo the workaround:
+ 4. Checkout the tip of `master` ([`6d2e8a3`](https://github.com/tony19-sandbox/vue-svg-css-buid-issue/commit/6d2e8a396b99ec5c0fe9202deffa5dcfd5c6b3e7)) to demo the workaround:
 
         git checkout master
 

@@ -11,7 +11,7 @@ This project demonstrates a build error and its workaround in a Vue project that
 
         npm install
 
- 2. Patch `svg-sprite-loader` to workaround [`svg-sprite-loader` Issue 271](https://github.com/kisenka/svg-sprite-loader/issues/271):
+ 2. Patch `svg-sprite-loader` to workaround [`svg-sprite-loader` Issue 271](https://github.com/kisenka/svg-sprite-loader/issues/271#issuecomment-410251878):
 
         ./patch-svg-sprite-loader.sh
 

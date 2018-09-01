@@ -1,0 +1,14 @@
+diff --git a/lib/utils/get-loader-options.js b/lib/utils/get-loader-options.js
+index 13440c5..51f67fc 100644
+--- a/lib/utils/get-loader-options.js
++++ b/lib/utils/get-loader-options.js
+@@ -23,7 +23,8 @@ function getLoaderOptions(loaderPath, rule) {
+ 
+   if (multiRule) {
+     const rules = [].concat(...multiRule.map(r => (r.use || r)));
+-    options = rules.map(normalizeRule).find(r => loaderPath.includes(r.loader)).options;
++    const rule2 = rules.map(normalizeRule).find(r => loaderPath.includes(r.loader)) || {};
++    options = rule2.options;
+   } else {
+     options = normalizeRule(rule).options;
+   }

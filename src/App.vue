@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import './app.scss';
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
@@ -17,8 +18,6 @@ export default {
 </script>
 
 <style>
-@import './app.scss';
-
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
